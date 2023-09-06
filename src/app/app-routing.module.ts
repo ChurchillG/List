@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'today',
     loadChildren: () => import('./today/today.module').then( m => m.TodayPageModule)
   },
+  {
+    path: 'new-to-do',
+    loadChildren: () => import('./new-to-do/new-to-do.module').then( m => m.NewToDoPageModule)
+  },
 
 ];
 
