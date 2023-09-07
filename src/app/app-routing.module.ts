@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'new-to-do',
     loadChildren: () => import('./new-to-do/new-to-do.module').then( m => m.NewToDoPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
 
 ];
 
