@@ -22,6 +22,18 @@ const routes: Routes = [
     path: 'new-to-do',
     loadChildren: () => import('./new-to-do/new-to-do.module').then( m => m.NewToDoPageModule)
   },
+  {
+    path: 'all',
+    loadChildren: () => import('./all/all.module').then( m => m.AllPageModule)
+  },
+  {
+    path: 'completed',
+    loadChildren: () => import('./completed/completed.module').then( m => m.CompletedPageModule)
+  },
+  {
+    path: 'new',
+    loadChildren: () => import('./new/new.module').then( m => m.NewPageModule)
+  },
 
 ];
 

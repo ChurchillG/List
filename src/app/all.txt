@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/list-completed"></ion-back-button>
+    </ion-buttons>
+    <ion-title>List</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button>...</ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  <h1><strong>No Reminders</strong></h1>
+  <ion-card>
+    <ion-card-content style="background-color: black;" >
+      
+      
+    </ion-card-content>
+    </ion-card>
+</ion-content>
