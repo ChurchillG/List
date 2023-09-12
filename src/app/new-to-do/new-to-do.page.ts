@@ -13,7 +13,6 @@ import 'firebase/compat/storage';
 import 'firebase/compat/database';
 import { MenuController } from '@ionic/angular';
 import 'firebase/storage';
-import { environment } from 'src/environments/environment';
 import { ChatService } from '../services/chat.service';
 
 

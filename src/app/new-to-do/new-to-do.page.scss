@@ -1,5 +1,5 @@
 ion-card{
-    background: rgb(159, 188, 241);
+    background: #635e5e;
 }
 ion-footer {
     ion-toolbar {
@@ -10,4 +10,8 @@ ion-footer {
             margin: 0.5vh 0;
         }
     }
+}
+
+ion-button{
+    --background: white;
 }
