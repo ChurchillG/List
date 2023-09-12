@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-searchbar placeholder="Search"></ion-searchbar>
+    <ion-buttons slot="end">
+      <ion-button>Edit</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-button color="danger" expand="block">Today (0)</ion-button>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button color="danger" expand="block">Scheduled (0)</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <h3>My Lists</h3>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="4">
+        <ion-button color="warning" expand="block">All (3)</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <ion-button color="warning" expand="block">Completed (0)</ion-button>
+      </ion-col>
+      <ion-col size="4">
+        <div class="list-item">
+          <img src="work-stuff-icon.png" alt="Work Stuff">
+          <span>Work Stuff (2)</span>
+        </div>
+      </ion-col>
+    </ion-row>
+    <div class="list-item">
+      <img src="reminders-icon.png" alt="Reminders">
+      <span>Reminders (1)</span>
+    </div>
+  </ion-grid>
+
+  <div class="tab-bar">
+    <div class="tab-item active">
+      <img src="new-icon.png" alt="New Reminder">
+    </div>
+    <div class="tab-item">
+      <img src="add-list-icon.png" alt="Add List">
+    </div>
+  </div>
+</ion-content>
