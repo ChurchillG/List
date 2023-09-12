@@ -79,5 +79,21 @@
     </ion-col>
   </ion-row>
 </ion-grid>
+
+<ion-footer>
+  <ion-toolbar color="light">
+   <ion-buttons slot="end">
+       
+     
+      <ion-fab-button size="small" color="primary" (click)="startRecording()">
+        <ion-icon name="mic"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button size="small" color="primary" (click)="stopRecording()" [disabled]="!isRecording">
+        <ion-icon name="stop-circle-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
 </ion-content>
 
