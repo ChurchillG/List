@@ -1,0 +1,34 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="background-color: cornflowerblue;">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/scheduled"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lists</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+ <ion-card-content class="content">
+  <ion-card ><span class="centered-text">Today</span>
+  <ion-card style="background-color: white;">
+     <span class="today">Morning</span>
+  </ion-card>
+  <ion-card style="background-color: white;">
+     <span class="today">Afternoon</span>
+  </ion-card>
+  <ion-card style="background-color: white;">
+    <span class="today">Tonight</span>
+  </ion-card>
+  </ion-card>
+
+  <ion-fab vertical="bottom" horizontal="end">
+    <!-- The fab button -->
+    <ion-fab-button (click)="onFabClick()" style="color: white;">
+      <ion-icon name="add" ></ion-icon>
+    </ion-fab-button>
+    <!-- The text -->
+    <span style="color: white;">New Reminder</span>
+  </ion-fab>
+ </ion-card-content>
+</ion-content>

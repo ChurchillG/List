@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar style="background-color: cornflowerblue;">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/today"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lists<ion-icon name="ellipsis-horizontal-outline"></ion-icon></ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ <ion-card-content class="content">
+  <ion-card ><span class="centered-text">Scheduled</span>
+  <ion-card style="background-color: white;">
+    <span class="today">Today</span>
+    {{today}}
+  </ion-card>
+  <ion-card style="background-color: white;">
+    <span class="today">Tomorrow</span>
+    {{tomorrow}}
+  </ion-card>
+  <ion-card class="min">
+    Media
+  </ion-card>
+  </ion-card>
+  
+ </ion-card-content>
+ 
+</ion-content>

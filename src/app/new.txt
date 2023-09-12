@@ -1,0 +1,32 @@
+<ion-header [translucent]="true" >
+  <ion-toolbar style="background-color: powderblue;">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/list-all"></ion-back-button>
+    </ion-buttons>
+    <ion-title>New List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="background-color: powderblue;">
+    <ion-card-content class="ion-text-center">
+      <ion-icon name="list"></ion-icon>
+      <ion-input placeholder="Enter list name"></ion-input>
+    </ion-card-content>
+  </ion-card>  
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="document"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="color-palette"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button>
+        <ion-icon name="globe"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>

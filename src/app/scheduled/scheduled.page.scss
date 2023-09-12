@@ -1,0 +1,60 @@
+ion-content {
+  --offset-top: 0; /* This ensures the content starts from the top of the screen */
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Take full height of parent */
+  background-color: red;
+}
+
+ion-card {
+  flex: 1; /* Allow the card to take the remaining space */
+  background-color:black;
+}
+.centered-text {
+  text-align: center;
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  color: red;
+}  
+
+.today {
+  display: block;
+  margin: auto;
+  font-weight: bold;
+  color: red;
+}  
+
+ion-header {
+  ion-toolbar {
+    --background: black;
+    
+    ion-title {
+      display: flex;
+      align-items: left;
+      
+      ion-icon {
+        margin-right: 8px;
+      }
+    }
+    
+    ion-buttons {
+      margin-left: 16px;
+    }
+  }
+}
+
+
+.min {
+  background-color: red;
+  @media (min-width: 500px) {
+    display: none !important;
+  }
+
+  @media (max-width: 1000px) {
+    display: contents !important;
+  }
+}
