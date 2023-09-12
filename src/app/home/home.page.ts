@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,23 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router: Router) {}
 
+  goToTodayPage() {
+    // Navigate to the "Today" page using its route path
+    this.router.navigate(['/today']);
+  }
+  
+  goToTodayScheduled() {
+    // Navigate to the "Today" page using its route path
+    this.router.navigate(['/scheduled']);
+  }
+  goToTodayAll() {
+    // Navigate to the "Today" page using its route path
+    this.router.navigate(['/all']);
+  }
+  goToTodayCompleted() {
+    // Navigate to the "Today" page using its route path
+    this.router.navigate(['/completed']);
+  }
 }

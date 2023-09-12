@@ -11,13 +11,13 @@
   <ion-grid>
     <ion-row>
       <ion-col size="6">
-        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;">
+        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;" (click)="goToTodayPage()">
           <ion-icon name="today-outline" style="font-size: 100px;"></ion-icon> Today
         </ion-button>
 
       </ion-col>
       <ion-col size="6">
-        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;">
+        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;" (click)=" goToTodayScheduled()">
           <ion-icon name="calendar-outline" style="font-size: 100px;"></ion-icon> Scheduled
         </ion-button>
         
@@ -26,12 +26,12 @@
     </ion-row>
     <ion-row>
       <ion-col size="6">
-        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;">
+        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;" (click)="goToTodayAll()">
         <ion-icon name="file-tray-full-outline" style="font-size: 100px;"></ion-icon> ALL
         </ion-button>
       </ion-col>
       <ion-col size="6">
-        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;">
+        <ion-button class="light-grey-button" expand="block" style="--background: #635e5e;" (click)="goToTodayCompleted()">
           <ion-icon name="checkmark-done-outline" style="font-size: 100px;"></ion-icon> Completed
         </ion-button>
       </ion-col>
