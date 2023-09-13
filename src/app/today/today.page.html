@@ -8,11 +8,11 @@
 </ion-header>
 
 
-<ion-content [fullscreen]="true" color="dark">
- <ion-card-content class="content" >
+<ion-content [fullscreen]="true" color="dark" >
+ <ion-card-content class="content" *ngFor="let interview of interviewList; let i = index;">
   <ion-card ><span class="centered-text">Today</span>
   <ion-card style="background-color: white;">
-     <span class="today">Morning</span>
+     <span class="today">{{interview.title}} <br>{{interview.description}}<br>{{interview.time}}<br>{{interview.date}}</span>
   </ion-card>
   <ion-card style="background-color: white;">
      <span class="today">Afternoon</span>
