@@ -1,33 +1,22 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="primary">
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/all"></ion-back-button>
     </ion-buttons>
     <ion-title style="color: white;">New List</ion-title>
+    <ion-buttons slot="end">
+      <!-- Add your "Done" button here -->
+      <ion-button (click)="onDoneClick()" style="color: white; background-color: #272829;">Done</ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-card style="background-color: #187CD9;">
+
+<ion-content color="dark">
+  <ion-card style="background-color: #272829;">
     <ion-card-content class="ion-text-center">
       <ion-icon name="list" style="font-size: 46px; color: white;"></ion-icon>
       <ion-input placeholder="Enter list name" style="color: white;"></ion-input>
     </ion-card-content>
   </ion-card>  
-  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button style="background-color: #187CD9;">
-      <ion-icon name="chevron-up-circle" style="font-size: 36px; color: white;"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button style="background-color: #187CD9;">
-        <ion-icon name="document" style="font-size: 24px; color: white;"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button style="background-color: #187CD9;">
-        <ion-icon name="color-palette" style="font-size: 24px; color: white;"></ion-icon>
-      </ion-fab-button>
-      <ion-fab-button style="background-color: #187CD9;">
-        <ion-icon name="globe" style="font-size: 24px; color: white;"></ion-icon>
-      </ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
 </ion-content>
