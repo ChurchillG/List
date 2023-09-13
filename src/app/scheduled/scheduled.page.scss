@@ -6,26 +6,26 @@ ion-content {
   display: flex;
   flex-direction: column;
   height: 100%; /* Take full height of parent */
-  background-color: red;
+  
 }
 
 ion-card {
   flex: 1; /* Allow the card to take the remaining space */
-  background-color:black;
+  background-color:#635e5e;
 }
 .centered-text {
   text-align: center;
   display: block;
   margin: auto;
   font-weight: bold;
-  color: red;
+  color: black;
 }  
 
 .today {
   display: block;
   margin: auto;
   font-weight: bold;
-  color: red;
+  color: black;
 }  
 
 ion-header {

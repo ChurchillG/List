@@ -20,6 +20,10 @@ const routes: Routes = [
     loadChildren: () => import('./today/today.module').then( m => m.TodayPageModule)
   },
   {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
     path: 'new-to-do',
     loadChildren: () => import('./new-to-do/new-to-do.module').then( m => m.NewToDoPageModule)
   },
@@ -35,6 +39,15 @@ const routes: Routes = [
     path: 'new',
     loadChildren: () => import('./new/new.module').then( m => m.NewPageModule)
   },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+  },
+
 
 ];
 
