@@ -11,5 +11,10 @@ export class NewPage implements OnInit {
 
   ngOnInit() {
   }
+  onDoneClick() {
+    // Add the logic you want to execute when the "Done" button is clicked
+    console.log('Done button clicked');
+    // You can add your custom logic here
+  }
 
 }
