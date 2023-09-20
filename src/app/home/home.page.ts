@@ -28,4 +28,7 @@ export class HomePage {
     // Navigate to the "Today" page using its route path
     this.router.navigate(['/completed']);
   }
+  navigateToNewPage(){
+    this.router.navigate(['/new-to-do']);
+  }
 }

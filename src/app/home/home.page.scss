@@ -17,3 +17,12 @@
   --ion-text-color: #444; /* Text color on hover */
 }
 
+.custom-fab-button {
+  --background: #FF7C00; /* Button background color */
+  --ripple-color: #FF7C00; /* Ripple color */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.custom-fab-button:hover {
+  transform: scale(1.1);
+}
