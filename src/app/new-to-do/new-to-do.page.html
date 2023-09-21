@@ -34,10 +34,16 @@
         </ion-card-header>
 
         <ion-card-content>
-          <ion-item>
-            <ion-label position="floating">Date</ion-label>
-            <ion-input type="text" [(ngModel)]="date"></ion-input>
+          <ion-item fill="outline">
+            <ion-label>Date</ion-label>
+            <ion-datetime-button  datetime="birthDatee"></ion-datetime-button>
+            <ion-modal [keepContentsMounted]="true">
+              <ng-template>
+              <ion-datetime    id="birthDatee"  (ionChange)="getIondate($event)" presentation="date"></ion-datetime>
+              </ng-template>
+            </ion-modal>
           </ion-item>
+          <div class="error-message" *ngIf="dateError">{{ dateError }}</div>
 
           <ion-item>
             <ion-label position="floating">Time</ion-label>

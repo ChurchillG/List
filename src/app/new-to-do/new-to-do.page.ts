@@ -32,8 +32,9 @@ export class NewToDoPage implements OnInit {
 
   title: any;
   description: any;
-  date: any;
   time: any;
+  date = '';
+  dateError:any;
 
   constructor(private loadingController: LoadingController,
     navCtrl: NavController, 
@@ -46,6 +47,20 @@ export class NewToDoPage implements OnInit {
 
   ngOnInit() {
   }
+
+validation(){
+  this.dateError=null;
+
+  if (this.date === '') {
+    this.dateError = 'Please choose your date.';
+    alert('Please choose your date.');
+    return;
+  }
+}
+
+getIondate($event: any) {
+  this.date = $event.detail.value.split('T')[0];
+}
 
   save(){
   
