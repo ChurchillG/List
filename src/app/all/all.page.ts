@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 @Component({
   selector: 'app-all',
@@ -7,9 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllPage implements OnInit {
 
-  constructor() { }
+  myList: any;
+
+  constructor(private db: AngularFirestore) { }
 
   ngOnInit() {
+    this.db.collection('newList')
+    .valueChanges()
+    .subscribe(data =>{
+      
+    this.myList=data;  
+    console.log(data);
+
+}); 
+   
   }
 
+  getData(){
+    this.db.collection('newList')
+    .valueChanges()
+    .subscribe(data =>{
+      
+    this.myList=data;  
+    console.log(data);
+
+}); 
+
+
+}
 }
