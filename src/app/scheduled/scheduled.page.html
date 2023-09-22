@@ -3,27 +3,35 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/today"></ion-back-button>
     </ion-buttons>
-    <ion-title>Lists<ion-icon name="ellipsis-horizontal-outline"></ion-icon></ion-title>
-    
+    <ion-title>Lists</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" color="dark">
- <ion-card-content class="content">
-  <ion-card ><span class="centered-text">Scheduled</span>
-  <ion-card style="background-color: white;">
-    <span class="today">Today</span>
-    {{today}}
-  </ion-card>
-  <ion-card style="background-color: white;">
-    <span class="today">Tomorrow</span>
-    {{tomorrow}}
-  </ion-card>
-  <ion-card class="min">
-    Media
-  </ion-card>
-  </ion-card>
-  
- </ion-card-content>
- 
+  <ion-card-content class="content">
+    <!-- Loop through the interviewList and display all data without date filtering -->
+    <ng-container *ngFor="let interview of interviewList; let i = index;">
+      <!-- Add a class to each card to differentiate them -->
+      <ion-card [ngClass]="'card-' + i">
+        <ion-card-header>
+          <ion-card-title>Title: {{ interview.title }}</ion-card-title>
+          <ion-card-subtitle>Time: {{ interview.time }}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          <p>Description: {{ interview.description }}</p>
+          <p>Date: {{ interview.date }}</p>
+        </ion-card-content>
+      </ion-card>
+    </ng-container>
+
+    <ion-fab vertical="bottom" horizontal="end">
+      <!-- The fab button -->
+      <ion-fab-button (click)="onFabClick()" style="color: white;">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+      <!-- The text -->
+      <span style="color: white;">New Reminder</span>
+    </ion-fab>
+  </ion-card-content>
 </ion-content>
