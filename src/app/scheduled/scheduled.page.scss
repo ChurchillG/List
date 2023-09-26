@@ -6,6 +6,11 @@ ion-content {
   display: flex;
   flex-direction: column;
   overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  color: black;
+}
+
+.color{
+  color: black;
 }
 
 /* Define different background colors for each card class */
@@ -14,15 +19,31 @@ ion-card.card-0 {
 }
 
 ion-card.card-1 {
-  background-color: #ff5733; /* Color for the second card */
+  background-color: #f1e8e5; /* Color for the second card */
 }
 
 ion-card.card-2 {
-  background-color: #33ff57; /* Color for the third card */
+  background-color: #a4afa6; /* Color for the third card */
 }
 
 ion-card.card-3 {
-  background-color: #5733ff; /* Color for the fourth card */
+  background-color: #6e6c77; /* Color for the fourth card */
+}
+
+ion-card.card-4 {
+  background-color: #635e5e; /* Color for the first card */
+}
+
+ion-card.card-5 {
+  background-color: #5a504e; /* Color for the second card */
+}
+
+ion-card.card-6 {
+  background-color: #859287; /* Color for the third card */
+}
+
+ion-card.card-7 {
+  background-color: #85838f; /* Color for the fourth card */
 }
 
 .centered-text {
