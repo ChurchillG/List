@@ -27,3 +27,19 @@ ion-button{
 .timepicker-backdrop-overlay { 
     z-index: 10000000 !important;
 }
+
+.header {
+    //--background: black;
+    
+    ion-toolbar {
+        --background: black;}
+    
+    ion-icon {
+      // You can customize the styles of the ion-icon within the header here if needed
+    }
+    
+    ion-title {
+      // You can customize the styles of the ion-title within the header here if needed
+    }
+  }
+  
