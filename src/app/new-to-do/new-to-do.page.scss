@@ -12,6 +12,11 @@ ion-footer {
     }
 }
 
+ion-item {
+    --background:#635e5e;
+    color: white; /* Change the text color to white for visibility */
+  }
+
 ion-button{
     --background: white;
 }
