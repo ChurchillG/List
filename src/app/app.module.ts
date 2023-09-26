@@ -19,11 +19,13 @@ import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { FormsModule } from '@angular/forms';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+
 
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
+  imports: [BrowserModule,NgxMaterialTimepickerModule, IonicModule.forRoot(), AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebaseConfig ),
     AngularFireAuthModule,
     AngularFirestoreModule,
@@ -37,3 +39,6 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
   bootstrap: [AppComponent],
 })
 export class AppModule {}
+
+
+

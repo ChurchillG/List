@@ -66,3 +66,14 @@ ion-header {
     display: contents !important;
   }
 }
+
+
+.custom-fab-button {
+  --background: white; /* Button background color */
+  --ripple-color: black; /* Ripple color */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.custom-fab-button:hover {
+  transform: scale(1.1);
+}
