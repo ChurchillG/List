@@ -75,7 +75,7 @@ getIondate($event: any) {
     this.navController.navigateForward("/home");
   }
 
-
+//Start recording
   startRecording() {
     navigator.mediaDevices.getUserMedia({ audio: true })
       .then((stream) => {
@@ -92,7 +92,7 @@ getIondate($event: any) {
         console.error('Error accessing microphone:', error);
       });
   }
-
+//Stop recording
   async stopRecording() {
     if (this.mediaRecorder && this.mediaRecorder.state !== 'inactive') {
       this.mediaRecorder.stop();
