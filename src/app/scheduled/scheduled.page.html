@@ -14,24 +14,26 @@
       <!-- Add a class to each card to differentiate them -->
       <ion-card [ngClass]="'card-' + i">
         <ion-card-header>
-          <ion-card-title>Title: {{ interview.title }}</ion-card-title>
-          <ion-card-subtitle>Time: {{ interview.time }}</ion-card-subtitle>
+          <ion-card-title style="color: rgb(14, 8, 6);">Title: {{ interview.title }}</ion-card-title>
+          <ion-card-subtitle style="color: rgb(14, 8, 6);">Time: {{ interview.time }}</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content class="color">
           <p>Description: {{ interview.description }}</p>
-          <p>Date: {{ interview.date }}</p>
+          <p >Date: {{ interview.date }}</p>
         </ion-card-content>
       </ion-card>
     </ng-container>
 
-    <ion-fab vertical="bottom" horizontal="end">
-      <!-- The fab button -->
-      <ion-fab-button (click)="onFabClick()" style="color: white;">
-        <ion-icon name="add"></ion-icon>
-      </ion-fab-button>
-      <!-- The text -->
-      <span style="color: white;">New Reminder</span>
-    </ion-fab>
+ 
   </ion-card-content>
+ 
 </ion-content>
+<ion-fab vertical="bottom" horizontal="end">
+  <!-- The fab button -->
+  <ion-fab-button (click)="onFabClick()" style="color: white;">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+  <!-- The text -->
+  <span style="color: white;">New Reminder</span>
+</ion-fab>
