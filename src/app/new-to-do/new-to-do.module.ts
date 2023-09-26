@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { NewToDoPageRoutingModule } from './new-to-do-routing.module';
 
 import { NewToDoPage } from './new-to-do.page';
-import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
+
 
 @NgModule({
   imports: [
@@ -15,7 +15,7 @@ import { NgxMaterialTimepickerModule } from 'ngx-material-timepicker';
     FormsModule,
     IonicModule,
     NewToDoPageRoutingModule,
-    NgxMaterialTimepickerModule
+ 
   ],
   declarations: [NewToDoPage]
 })
