@@ -1,20 +1,38 @@
 <ion-header [translucent]="true">
-  <ion-toolbar color="dark"> <!-- Set a background color for the header -->
+  <ion-toolbar style="background-color: cornflowerblue;">
     <ion-buttons slot="start">
-      <ion-back-button defaultHref="/home"></ion-back-button>
+      <ion-back-button defaultHref="/today"></ion-back-button>
     </ion-buttons>
-    <ion-title>Completed List</ion-title>
+    <ion-title>Completed</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="custom-content" color="dark"> 
-  <h1 class="custom-heading"><strong>Nothing Completed</strong></h1>
-  <ion-card class="custom-card">
-    <ion-card-content style="background-color: #272829;">
+<ion-content [fullscreen]="true" color="dark">
+  <ion-card-content class="content">
+    <!-- Loop through the interviewList and display all data without date filtering -->
+    <ng-container *ngFor="let interview of interviewList; let i = index;">
+      <!-- Add a class to each card to differentiate them -->
+      <ion-card [ngClass]="'card-' + i">
+        <ion-card-header>
+          <ion-card-title style="color: rgb(14, 8, 6);">Title: {{ interview.title }}</ion-card-title>
+          <ion-card-subtitle style="color: rgb(14, 8, 6);">Time: {{ interview.time }}</ion-card-subtitle>
+        </ion-card-header>
 
+        <ion-card-content class="color">
+          <p>Description: {{ interview.description }}</p>
+          <p >Date: {{ interview.date }}</p>
+        </ion-card-content>
+      </ion-card>
+    </ng-container>
 
-
-    </ion-card-content>
-  </ion-card>
+ 
+  </ion-card-content>
+ 
 </ion-content>
-
+<div class="fab-container">
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button size="small" class="custom-fab-button" (click)="onFabClick()">
+      <ion-icon name="add" style="font-size: 28px; color: black;"></ion-icon>
+    </ion-fab-button>      
+  </ion-fab>
+</div>
