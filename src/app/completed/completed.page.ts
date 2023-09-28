@@ -41,7 +41,7 @@ export class CompletedPage implements OnInit {
         const today = new Date();
         this.interviewList = this.interviewList.filter((interview) => {
           const interviewDate = new Date(interview.date);
-          return interviewDate >= today;
+          return interviewDate <= today;
         });
 
         // Sort the filtered interviewList by date in ascending order
@@ -54,7 +54,7 @@ export class CompletedPage implements OnInit {
         this.isLoading = false;
         this.isError = false;
       },
-      (err) => {
+      (err:any) => {
         this.isLoading = false;
         this.isError = true;
         console.error('Error while fetching list data', err);

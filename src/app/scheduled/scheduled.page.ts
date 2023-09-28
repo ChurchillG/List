@@ -54,7 +54,7 @@ export class ScheduledPage implements OnInit {
         this.isLoading = false;
         this.isError = false;
       },
-      (err) => {
+      (err:any) => {
         this.isLoading = false;
         this.isError = true;
         console.error('Error while fetching list data', err);
